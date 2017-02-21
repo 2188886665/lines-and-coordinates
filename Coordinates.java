@@ -8,7 +8,7 @@ import java.util.Random;
 public class Coordinates {
 
     // Identifiers:
-    //   1 - Horizontal or vertical line (xy = 1 or 3 then horizontal, xy = 2 then vertical)
+    //   1 - Horizontal or vertical line (xy = 1, 3, 5, or 7 then horizontal, xy = 2, 4, or 6 then vertical)
     //       Horizontal - {id, startX, endX, yPos, xy}
     //       Vertical - {id, startY, endY, xPos, xy}
     //   2 - Tap
