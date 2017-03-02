@@ -25,7 +25,8 @@ public class Coordinates {
     public int connectedLines = 1;
 
     public Coordinates(Context c, int l) {
-        context = c;
+        context = c
+        // Currently set to 1, but value is passed from another class, which ranges between 0 and 2
         level = l;
 
         // Number of lines to be drawn
@@ -33,7 +34,9 @@ public class Coordinates {
         Random r = new Random();
 
         // These probabilities are only set once per game
+        // Chance for all lines to be disconnected
         allDisconnected = r.nextInt(100);
+        // Chance to have either line or tap generated next
         lineTapProbability = r.nextInt(100);
 
         //drawTimeCalc(quantity);
